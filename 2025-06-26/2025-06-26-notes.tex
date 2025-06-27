@@ -219,6 +219,30 @@ The average fit is akin to the expected prediction $\mathbb{E}[\hat{f}(x)]$ over
 
 Bias is high when the hypothesis class is unable to capture $f_{\text{true}}(x)$. This happens when the model class is too simple or restrictive to represent the true underlying function.
 
+\textbf{Model Complexity vs Bias-Variance:}
+
+\textbf{Low Complexity Model:}
+\begin{itemize}
+    \item \textbf{High Bias} - Cannot capture complex patterns in $f_{\text{true}}(x)$
+    \item \textbf{Low Variance} - Predictions consistent across different training sets
+    \item Example: Linear model for non-linear data
+\end{itemize}
+
+\textbf{High Complexity Model:}
+\begin{itemize}
+    \item \textbf{Low Bias} - Can approximate $f_{\text{true}}(x)$ well
+    \item \textbf{High Variance} - Predictions vary significantly with training data
+    \item Example: High-degree polynomial or deep neural network
+\end{itemize}
+
+\textbf{Key Insight:} There's a fundamental tradeoff - reducing bias often increases variance, and vice versa.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{bias-variance-diagram.png}
+\caption{Bias and Variance Contributing to Total Error (Source: Wikimedia Commons)}
+\end{figure}
+
 \subsection{Approximating Generalization Error}
 Since true distribution $D$ is unknown, we approximate generalization error using:
 \textbf{Validation Set:} Hold-out data to estimate $R(h) \approx \hat{R}_{val}(h)$
