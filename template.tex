@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.5cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\setstretch{0.9}
+
+\title{CS229 Notes - [Date]}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Section Title}
+
+Brief introduction or overview of the topic.
+
+\subsection{Definitions}
+\textbf{Key Term:} Definition here
+
+\textbf{Mathematical Definition:}
+\[
+\text{Formula} = \mathbb{E}_{(x,y) \sim D}[L(h(x), y)]
+\]
+
+\subsection{Important Concepts}
+\begin{itemize}
+    \item \textbf{Point 1:} Description with math $\theta$
+    \item \textbf{Point 2:} Another important concept
+    \item \textbf{Point 3:} Final key point
+\end{itemize}
+
+\section{Mathematical Derivations}
+
+\subsection{Step-by-Step Process}
+Starting from the basic equation:
+\[
+f(x) = ax + b
+\]
+
+Taking the derivative:
+\[
+\frac{df}{dx} = a
+\]
+
+\textbf{Result:} The derivative is constant.
+
+\subsection{Example Calculation}
+Given data points $(x_1, y_1), (x_2, y_2), \ldots, (x_n, y_n)$:
+
+\textbf{Step 1:} Calculate the mean
+\[
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+\]
+
+\textbf{Step 2:} Expanding the sum:
+\[
+= \frac{1}{n}[x_1 + x_2 + \ldots + x_n]
+\]
+
+\section{Algorithms}
+
+\subsection{Algorithm Name}
+\textbf{Input:} Data, parameters, etc.
+
+\textbf{Algorithm:}
+\begin{enumerate}
+    \item Initialize parameters $\theta = 0$
+    \item While not converged:
+    \begin{itemize}
+        \item Update: $\theta := \theta - \alpha \nabla J(\theta)$
+        \item Check convergence: $|J(\theta^{(t+1)}) - J(\theta^{(t)})| < \epsilon$
+    \end{itemize}
+    \item Return $\hat{\theta}$
+\end{enumerate}
+
+\textbf{Output:} Optimized parameters
+
+\section{Visual Elements}
+
+\subsection{Including Figures}
+% Uncomment and modify as needed:
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.8\textwidth]{your-image.png}
+% \caption{Your caption here}
+% \end{figure}
+
+\subsection{Key Insights}
+\textbf{Important Note:} Always remember that...
+
+\textbf{Practical Tip:} In practice, you should...
+
+\section{Summary}
+
+\textbf{Main Takeaways:}
+\begin{itemize}
+    \item Summary point 1
+    \item Summary point 2  
+    \item Summary point 3
+\end{itemize}
+
+\textbf{Next Steps:} What to study next...
+
+\end{document} 
